@@ -5,34 +5,58 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+	<h3>Welcome to BUGLOG!</h3>
 	<div class="row">
-<div id="newissue" class="column design">
-<h4 id="new">New</h4>
-Title<input id="title"type="text" name="title" class="space" size="50" required="required"><br><br>
-<textarea id="description"type="text" name="description" placeholder="description" required="required" ></textarea><br><br>
-More details<br><textarea id="chatlink" type="text" name="chatlink" placeholder="chatlink or customer email address" required></textarea><br>
-Assigned to<input id="assignedto" type="text" class="space"  required><br><br>
-created by<input id="createdby"type="text" class="space"  size="15" required> 
-closed by<input id="closedby"type="text" class="space"  size="15"> <br><br>
-created on<input id="createdon"type="date" class="space"   required> 
-closed on<input id="closedon"type="date" class="space" > <br><br>
-<button id="submit">Done</button><button id="update" style="display: none;">Update</button><button id="cancel" >Cancel</button>
-</div>
+		<div id="newissue" class="column design">
+			<div style="float: right">
+				<h5>
+					count
+					<h5>
+						<button id="count">1</button>
+			</div>
+			<h4 id="new">New</h4>
+			Title<input id="title" type="text" name="title" class="space"
+				size="50" required><br>
+			<br>
+			<textarea id="description" type="text" name="description"
+				placeholder="description" required="required"></textarea>
+			<br>
+			<br> More details<br>
+			<textarea id="chatlink" type="text" name="chatlink"
+				placeholder="chatlink or customer email address" required></textarea>
+			<br> Assigned to<input id="assignedto" type="text" class="space"
+				required><br>
+			<br> created by<input id="createdby" type="text" class="space"
+				size="15" required> closed by<input id="closedby"
+				type="text" class="space" size="15"> <br>
+			<br> created on<input id="createdon" type="date" class="space"
+				required> closed on<input id="closedon" type="date"
+				class="space"> <br>
+			<br>
+			<button id="submit">Done</button>
+			<button id="update" style="display: none;">Update</button>
+			<button id="cancel">Cancel</button>
+		</div>
 
-<div id="reportedissues" class="column design"> 
-<h4>Reported issues	</h4><ul id="reportedissue"></ul>
-</div>
+		<div id="reportedissues" class="column design">
+			<h4>Reported issues</h4>
+			<ul id="reportedissue"></ul>
+		</div>
 
-<div id="resolvedissues" class="column design">
-	<h4>Resolved issues </h4><ul id="resolvedissue"></ul>
-</div>
+		<div id="resolvedissues" class="column design">
+			<h4>Resolved issues</h4>
+			<ul id="resolvedissue"></ul>
+		</div>
 
-</div>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
-<script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
-<script type="text/javascript" src="http://backbonejs.org/backbone-min.js"></script>
-<script type="text/javascript" src="model.js"></script>
-<script type="text/javascript" src="view.js"></script>
-<script type="text/javascript" src="main.js"></script>
+	</div>
+	<script type="text/javascript"
+		src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript"
+		src="http://underscorejs.org/underscore-min.js"></script>
+	<script type="text/javascript"
+		src="http://backbonejs.org/backbone-min.js"></script>
+	<script type="text/javascript" src="model.js"></script>
+	<script type="text/javascript" src="view.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

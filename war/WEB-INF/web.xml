@@ -12,6 +12,23 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>_Buglog</servlet-name>
 		<url-pattern>/_buglog</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>Save</servlet-name>
+		<servlet-class>buglog.SaveDetailsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Save</servlet-name>
+		<url-pattern>/saveissue</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Load</servlet-name>
+		<servlet-class>buglog.ViewAllServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Load</servlet-name>
+		<url-pattern>/loadissue</url-pattern>
+	</servlet-mapping>
+	
 	<welcome-file-list>
 		<welcome-file>main.html</welcome-file>
 	</welcome-file-list>
