@@ -1,4 +1,10 @@
 $(document).ready(function() {
+	var urlParams = new URLSearchParams(window.location.search);
+	var str=urlParams.toString();
+	var str1=str.replace("+"," ");
+	var str2=str1.replace("=","");
+	console.log(str2); // "?name"
+	document.getElementById("name").innerHTML=str2;
 	loadIssueList();
 	$("#submit").click(function() {
 		getData();
@@ -139,4 +145,11 @@ function loadIssueList() {
 			alert("error in load issue");
 		}
 	});
+}
+function signOut() {
+  var auth2 = gapi.auth2.getAuthInstance();
+  auth2.signOut().then(function () {
+    console.log('User signed out.');
+    window.location="/index.html";
+  });
 }

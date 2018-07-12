@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="google-signin-client_id" content="243752961514-piism0apeggljo7lggsq4isdccok2bra.apps.googleusercontent.com">
 <title>New issue</title>
 <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<h3>Welcome to BUGLOG!</h3>
+	<div><h3 style="display:inline-block">Hi, </h3>
+	<h3 id="name" class="aln"></h3>
+	<h3 class="aln">Welcome to BUGLOG!</h3>
+	<button style="float:right"  onclick="signOut()">Sign out
+	</button></div>
 	<div class="row">
 		<div id="newissue" class="column design">
 			<div style="float: right">
@@ -58,5 +63,6 @@
 	<script type="text/javascript" src="model.js"></script>
 	<script type="text/javascript" src="view.js"></script>
 	<script type="text/javascript" src="main.js"></script>
-</body>
+	    <script src="https://apis.google.com/js/platform.js" async defer></script>
+	</body>
 </html>

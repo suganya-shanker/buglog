@@ -7,26 +7,23 @@
 <!-- but may lead to some differences in layout.   -->
 
 <html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Buglog - issue tracker</title>
-</head>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Login page</title>
+  </head>
 
-<body>
-	<h1>Welcome to BUGLOG!</h1>
-	<br>
-	<form action="_buglog" method="post">
-		Username:<input type="text" name="username" style="margin: 5px">
-		<br> Password:<input type="password" name="password"
-			style="margin: 5px"><br> <input type="submit">
-	</form>
-	<!--  <table>
-       <tr>
-        <td colspan="2" style="font-weight:bold;">Available Servlets:</td>        
-      </tr>
-      <tr>
-        <td><a href="_buglog">Click here to login</a></td>
-      </tr>
-    </table> -->
-</body>
+  <body>
+    <h1>Welcome to Buglog</h1>
+	<div class="middle">
+		<!-- <button onclick="googlefunction()">Google Sign in</button> -->
+ 	<a href="https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://1-dot-inbound-hawk-191607.appspot.com/OAuth2CallBack&response_type=code&client_id=243752961514-4c76h99ijqtd8418ml8iin76t5ohsqo3.apps.googleusercontent.com&approval_prompt=force">
+        		Google Sign in
+        	</a>
+        </div>
+       <style>
+       .middle{
+           justify-content: center;
+              }
+       </style>
+  </body>
 </html>

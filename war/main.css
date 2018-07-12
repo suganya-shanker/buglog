@@ -35,6 +35,11 @@ button {
  {
  border-style: groove;
  }
+ .aln
+ {
+ display:inline-block;
+ } 
+
 
 /*body{
 	background-color: #82D0F1;
